@@ -10,26 +10,60 @@
     );
   </script>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Ubuntu+Mono&display=swap" rel="stylesheet">
-  <title>Loading Screen | By Ferty</title>
+  <title>Orion - Chargement [Serveur Passif]</title> <!-- Je t'aime bien Ferty mais si ça apparaît vaut mieux que ce soit la commu -->
 </head>
 <body>
-    <div class="background">
-
-        <!-- Changer ici l'image ou pour faire plus simple, renommer votre image en "event.jpg" -->
-        <img src="images/event.jpg" class="background-image" alt="Image">
-   </div>
+  <div class="background">
+    <img src="images/fertycomm.jpg" class="background-image" alt="Background Image">
+  </div>
   <div class="overhaul"></div>
 
-  <div id="history"></div> 
+  <nav>
+    <div id="announcement"></div>
+    <span id="map">Map actuelle du serveur : </span> <!-- Meilleure indication que "vous jouez sur.." -->
+    <span id="steamid">Votre SteamID64 : </span> <!-- On dirait que ça ne s'affiche pas correctement ? chelou. -->
+  </nav>
+
+  
 
   <main>
+    <div class="title">
+      <h2>Heureux de vous accueillir sur</h2>
+      <h1 id="title"></h1>
+    </div>
     <div class="under-nav"></div>
     <div class="loading-box"></div>
   </main>
 
+  <div id="floating-image" class="coin"></div>
   <img id="easteregg" src="images/loutre.png" alt="Easter Egg">
 
-  <script src="js/lib/jquery-3.4.1.min.js"></script>
+  <audio id="background-music" autoplay loop>
+    <source src="music/halloween.mp3" type="audio/mpeg">
+    Votre navigateur ne supporte pas l'élément audio.
+  </audio>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const audio = document.getElementById('background-music');
+      
+      audio.addEventListener('canplaythrough', function() {
+        console.log('La musique est prête à être jouée.');
+        audio.play().catch(error => {
+          console.error('Erreur lors de la lecture automatique :', error);
+        });
+      }, false);
+      
+      audio.addEventListener('error', function() {
+        console.error('Erreur lors du chargement de la musique.');
+      }, false);
+    });
+  </script>
+  
+  
+  
+
+  <script src="js/lib/jquery-3.4.1.min.js"></script> <!-- Récupération de la lib -->
   <script type="text/javascript">
     document.write(
       '<script src="js/config.js?' + Math.random() + '"><\/script>'
