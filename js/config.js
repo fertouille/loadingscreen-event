@@ -27,18 +27,18 @@ Config.enableAnnouncements = true;
  * only works if enableAnnouncements = true
  */
 Config.announceMessages = [
-  "Bienvenue dans notre sombre repaire... Vous survivrez ?",
-  "Profitez bien... tant que vous le pouvez encore !",
-  "N'oubliez pas de consulter nos terrifiantes règles sur le forum, âmes égarées !",
-  "Rejoignez notre Discord... si vous n'avez pas peur du noir !",
-  "Merci d'avoir osé entrer dans notre antre maléfique !",
-  "Amusez-vous... mais ne laissez pas les ombres vous attraper !",
-  "Souvenez-vous : respectez les autres joueurs... ou subissez la malédiction !",
-  "Un problème ? Invoquez un admin... mais attention à ce qu'il ne soit pas possédé !",
-  "Perdus dans l'obscurité ? Rejoignez notre Discord pour un peu de lumière !",
-  "Besoin d'aide ? Le staff est là... si vous osez faire un ticket en jeu !",
-  "N'oubliez pas, ceci est un SeriousRP... même les fantômes obéissent aux règles !",
-  "Attention où vous tirez... les revenants n'apprécient pas les balles perdues !"
+  "Bienvenue sur notre serveur !",
+  "Profitez de votre expérience de jeu !",
+  "N'oubliez pas de lire nos règles sur le forum !",
+  "Rejoignez notre Discord pour rester informé !",
+  "Merci d'être parmi nous !",
+  "Amusez-vous bien !",
+  "Rappelez-vous : respectez les autres joueurs !",
+  "Besoin d'aide ? Contactez un admin en jeu !",
+  "Vous êtes perdus sur quelque chose ? Rejoignez notre discord.",
+  "Faite appel au staff en faisant un ticket en jeu, au besoin !",
+  "N'oubliez pas, ceci est un SeriousRP !",
+  "Faites attention à vos tirs...."
 ];
 
 /**
