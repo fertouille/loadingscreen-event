@@ -10,36 +10,38 @@
     );
   </script>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Ubuntu+Mono&display=swap" rel="stylesheet">
-  <title>Orion - Chargement [Serveur Passif]</title> <!-- Je t'aime bien Ferty mais si ça apparaît vaut mieux que ce soit la commu -->
+  <title>Orion - Chargement [Serveur Passif]</title>
 </head>
 <body>
   <div class="background">
-    <img src="images/WALLPAPER2-hallowen.png" class="background-image" alt="Background Image">
+    <img src="images/all.png" class="carousel-image" alt="Image 7">
+    <img src="images/41st.png" class="carousel-image" alt="Image 2">
+    <img src="images/501st.png" class="carousel-image" alt="Image 3">
+    <img src="images/212th.png" class="carousel-image" alt="Image 4">
+    <img src="images/21st.png" class="carousel-image" alt="Image 5">
+    <img src="images/bos.png" class="carousel-image" alt="Image 6">
+    <img src="images/shock.png" class="carousel-image" alt="Image 8">
   </div>
   <div class="overhaul"></div>
 
   <nav>
     <div id="announcement"></div>
-    <span id="map">Map actuelle du serveur : </span> <!-- Meilleure indication que "vous jouez sur.." -->
-    <span id="steamid">Votre SteamID64 : </span> <!-- On dirait que ça ne s'affiche pas correctement ? chelou. -->
+    <span id="map">Map actuelle du serveur : </span> 
+    <span id="steamid">Votre SteamID64 : </span> 
   </nav>
 
   
 
   <main>
-    <div class="title">
-      <h2>Les ténèbres vous accueillent sur</h2>
-      <h1 id="title"></h1>
-    </div>
     <div class="under-nav"></div>
     <div class="loading-box"></div>
   </main>
 
   <div id="floating-image" class="coin"></div>
-  <img id="easteregg" src="images/loutre-halloween.png" alt="Easter Egg">
+  <img id="easteregg" src="images/loutre.png" alt="Easter Egg"> 
 
   <audio id="background-music" autoplay loop>
-    <source src="music/halloween.mp3" type="audio/mpeg">
+    <source src="music/welcome_orion.mp3" type="audio/mpeg">
     Votre navigateur ne supporte pas l'élément audio.
   </audio>
   
@@ -61,9 +63,6 @@
       }, false);
     });
   </script>
-  
-  
-  
 
   <script src="js/lib/jquery-3.4.1.min.js"></script> <!-- Récupération de la lib -->
   <script type="text/javascript">
@@ -73,6 +72,22 @@
     document.write(
       '<script src="js/main.js?' + Math.random() + '"><\/script>'
     );
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let currentImageIndex = 0;
+      const images = document.querySelectorAll('.carousel-image');
+      const totalImages = images.length;
+    
+      function changeImage() {
+        images[currentImageIndex].classList.remove('active');
+        currentImageIndex = (currentImageIndex + 1) % totalImages;
+        images[currentImageIndex].classList.add('active');
+      }
+    
+      setInterval(changeImage, 7000);
+    });
   </script>
 </body>
 </html>
