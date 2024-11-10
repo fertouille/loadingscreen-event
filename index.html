@@ -40,29 +40,6 @@
   <div id="floating-image" class="coin"></div>
   <img id="easteregg" src="images/loutre.png" alt="Easter Egg"> 
 
-  <audio id="background-music" autoplay loop>
-    <source src="music/welcome_orion.mp3" type="audio/mpeg">
-    Votre navigateur ne supporte pas l'élément audio.
-  </audio>
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const audio = document.getElementById('background-music');
-
-      audio.volume = 0.07;
-      
-      audio.addEventListener('canplaythrough', function() {
-        console.log('La musique est prête à être jouée.');
-        audio.play().catch(error => {
-          console.error('Erreur lors de la lecture automatique :', error);
-        });
-      }, false);
-      
-      audio.addEventListener('error', function() {
-        console.error('Erreur lors du chargement de la musique.');
-      }, false);
-    });
-  </script>
 
   <script src="js/lib/jquery-3.4.1.min.js"></script> <!-- Récupération de la lib -->
   <script type="text/javascript">
