@@ -103,7 +103,7 @@ h1 {
   right: 20px; /* Ajustez la distance de la droite */
   width: 100px; /* Ajustez la taille de votre image */
   height: 100px; /* Ajustez la taille de votre image */
-  background-image: url('../images/logo.png'); /* Chemin relatif vers votre image */
+  background-image: url('../images/logo-noel.png'); /* Chemin relatif vers votre image */
   background-size: cover;
   background-position: center;
   border-radius: 50%; /* Rend l'image ronde */
