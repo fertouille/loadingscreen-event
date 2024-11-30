@@ -92,21 +92,6 @@ h1 {
   height: 30px; 
 }
 
-#floating-image {
-  position: fixed;
-  top: 70px; /* Ajustez la distance du haut */
-  right: 20px; /* Ajustez la distance de la droite */
-  width: 100px; /* Ajustez la taille de votre image */
-  height: 100px; /* Ajustez la taille de votre image */
-  background-image: url('../images/logo-noel.png'); /* Chemin relatif vers votre image */
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%; /* Rend l'image ronde */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ajoute une ombre pour un effet de profondeur */
-  animation: flip 3s infinite ease-in-out; /* Animation plus lente avec un effet de ralentissement */
-  transform-origin: center center;
-  z-index: 50;
-}
 
 @keyframes flip {
   0% {
