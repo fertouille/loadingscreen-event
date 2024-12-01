@@ -27,19 +27,20 @@ Config.enableAnnouncements = true;
  * only works if enableAnnouncements = true
  */
 Config.announceMessages = [
-  "Bienvenue sur notre serveur !",
-  "Profitez de votre expérience de jeu !",
-  "N'oubliez pas de lire nos règles sur le forum !",
-  "Rejoignez notre Discord pour rester informé !",
-  "Merci d'être parmi nous !",
-  "Amusez-vous bien !",
-  "Rappelez-vous : respectez les autres joueurs !",
-  "Besoin d'aide ? Contactez un admin en jeu !",
-  "Vous êtes perdus sur quelque chose ? Rejoignez notre discord.",
-  "Faite appel au staff en faisant un ticket en jeu, au besoin !",
-  "N'oubliez pas, ceci est un SeriousRP !",
-  "Faites attention à vos tirs...."
+  "Bienvenue sur notre serveur, et joyeuses fêtes ! 🎄",
+  "Profitez de votre expérience de jeu, et que l'esprit de Noël vous accompagne ! 🎅",
+  "N'oubliez pas de lire nos règles sur le forum, même le Père Noël les respecte ! 😉",
+  "Rejoignez notre Discord pour rester informé et partager la magie de Noël ! ✨",
+  "Merci d'être parmi nous en cette période festive ! 🎁",
+  "Amusez-vous bien, et partagez la joie des fêtes ! ❄️",
+  "Rappelez-vous : respectez les autres joueurs, c'est l'esprit de Noël ! 🌟",
+  "Besoin d'aide ? Contactez un admin en jeu, même les lutins peuvent se tromper ! 🛠️",
+  "Vous êtes perdus ? Rejoignez notre Discord et trouvez votre chemin, comme les rennes ! 🦌",
+  "Faites appel au staff en faisant un ticket en jeu, au besoin, même pour des cadeaux égarés ! 🎄",
+  "N'oubliez pas, ceci est un SeriousRP, même le Père Noël suit les règles ! 🎅",
+  "Faites attention à vos tirs, évitez de toucher les décorations de Noël ! 🎁"
 ];
+
 
 /**
  * How many miliseconds for each announcement?
